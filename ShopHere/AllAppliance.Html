@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <style>
+        .applianclist h1 {
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            color: rgb(0, 0, 0);
+            font-family: "Candal", sans-serif; 
+        }
+        .appliance1 {
+            display: flex;
+            justify-content: center;
+            margin-top: -15px;
+        }
+        .appliance1 div img {
+            border-radius: 77px;
+            border: 8px solid black;
+            height: 120px;
+        }
+        .appliance1 div h4 {
+            text-decoration: none;
+            font-size: 25px;
+            margin-top: 0px;
+            color: black;
+            font-family: "Candal", sans-serif;
+        }
+        .Refrigerators { margin-left: -15px; margin-top: 20px; }
+        .Refrigerators h4 { margin-left: -20px; }
+
+        .Television { margin-left: 100px; margin-top: 20px; }
+
+        .Washing { margin-left: 15px; }
+        .Washing img { margin-left: 140px; margin-top: 20px; }
+        .Washing h4 { margin-left: 90px; }
+
+        .AC { margin-left: 45px; }
+        .AC img { margin-left: 60px; margin-top: 20px; }
+        .AC h4 { margin-left: 110px; }
+
+        .Oven img { margin-left: 150px; margin-top: 20px; }
+        .Oven h4 { margin-left: 184px; }
+
+        .Purifier img { margin-left: 150px; margin-top: 20px; }
+        .Purifier h4 { margin-left: 175px; }
+
+        .applianceslide {
+            width: 100%;
+            height: 55vh;
+            overflow: hidden;
+        }
+        .appliancebanner img {
+            width: 100%;
+            height: 55vh;
+        }
+        .applianceslider {
+            position: relative;
+            width: 600%;
+            left: 0%;
+            animation: 30s appliancebanner infinite;
+        }
+        .appliancebanner {
+            position: relative;
+            width: 16.66%; 
+            float: left;
+        }
+        @keyframes appliancebanner {
+            0% { left: 0%; }
+            10% { left: -100%; }
+            20% { left: -200%; }
+            30% { left: -300%; }
+            40% { left: -400%; }
+            50% { left: -500%; }
+            60% { left: -500%; }
+            70% { left: -400%; }
+            80% { left: -300%; }
+            95% { left: -200%; }
+            90% { left: -100%; }
+            100% { left: 0%; }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="applianclist">
+            <h1>Search By <font color="#a2c43d">Products</font></h1>
+        </div>
+    </section>
+    <section class="appliance1">
+        <div class="Refrigerators">
+            <a href="#Page:refrigerator" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/61Cblx5LWAL._UF1000,1000_QL80_.jpg" alt="Refrigerators">
+                <h4>Refrigerators</h4>
+            </a>
+        </div>
+        <div class="Television">
+            <a href="#Page:TV" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/71xQtZAXBWL._UF1000,1000_QL80_.jpg" alt="Television">
+                <h4>Television</h4>
+            </a>
+        </div>
+        <div class="Washing">
+            <a href="#Page:washing_machine" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/71vaGnfKKzL.jpg" alt="Washing Machine">
+                <h4>Washing Machine</h4>
+            </a>
+        </div>
+        <div class="AC">
+            <a href="#Page:AC" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/51ACVkoJypL._UF1000,1000_QL80_.jpg" alt="AC">
+                <h4>AC</h4>
+            </a>
+        </div>
+        <div class="Oven">
+            <a href="#Page:Microwave_oven" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/61vQxewGCiL._UF1000,1000_QL80_.jpg" alt="Oven">
+                <h4>Oven</h4>
+            </a>
+        </div>
+        <div class="Purifier">
+            <a href="#Page:water_purifier" style="text-decoration: none;">
+                <img src="https://m.media-amazon.com/images/I/71bmk7NQKkL._UF1000,1000_QL80_.jpg" alt="Purifier">
+                <h4>Purifier</h4>
+            </a>
+        </div>
+    </section>
+    <section class="applianceslide">
+        <div class="applianceslider">
+            <div class="appliancebanner">
+                <a href="#Page:refrigerator"><img src="https://d68pxkftt5390.cloudfront.net/web-assets/v2/assets/category-header/home-appliances/home-appliances-refrigerators-banner-1.png" alt=""></a>
+            </div>
+            <div class="appliancebanner">
+                <a href="#Page:TV"><img src="https://www.vise.in/_next/image?url=https%3A%2F%2Fd2xamzlzrdbdbn.cloudfront.net%2Fvise_Images%2Flandingpage%2Ftv%2Ftv-banner.webp&w=3840&q=75" alt=""></a>
+            </div>
+            <div class="appliancebanner">
+                <a href="#Page:washing_machine"><img src="https://d68pxkftt5390.cloudfront.net/web-assets/v2/assets/category-header/home-appliances/home-appliances-washing-machines-banner-1.png" alt=""></a>
+            </div>
+            <div class="appliancebanner">
+                <a href="#Page:AC"><img src="https://api.cphwpfzsns-daikinair1-p1-public.model-t.cc.commerce.ondemand.com/medias/PLP.jpg?context=bWFzdGVyfGltYWdlc3w0NTEzNzB8aW1hZ2UvanBlZ3xhR1UxTDJnME5pODVPRE15TnpRM056STRPVEkyTDFCTVVDNXFjR2N8MGQyOWU5NTc1N2Q1NzBkOTU4ZTA5MDMxYjU5NGMyZTk3N2QzMmQwMzBiYjUzZDM2ZjZjNjUwNDE1ZjcyMmRjOA" alt=""></a>
+            </div>
+            <div class="appliancebanner">
+                <a href="#Page:Microwave_oven"><img src="https://d68pxkftt5390.cloudfront.net/web-assets/v2/assets/category-header/home-appliances/home-appliances-microwave-ovens-banner-1.png" alt=""></a>
+            </div>
+            <div class="appliancebanner">
+                <a href="#Page:water_purifier"><img src="https://merlinro.in/wp-content/uploads/2023/09/Banner-21-Sept-2023.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
